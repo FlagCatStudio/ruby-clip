@@ -23,7 +23,7 @@ gem install ruby-clip
 require 'clip'
 
 file = Clip::File.open('/path/to/file.clip')
-preview = file.previews.first
+preview = file.canvas_previews.first
 
 # Get info about the canvas preview
 preview.width    # => 800
