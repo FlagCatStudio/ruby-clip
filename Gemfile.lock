@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruby-clip (0.1.0)
+    ruby-clip (0.1.1)
       sqlite3 (~> 2)
 
 GEM
