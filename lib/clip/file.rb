@@ -50,7 +50,7 @@ module Clip
     def sqlite_file
       @sqlite_file ||=
         begin
-          file = Tempfile.new("ruby-clip-#{basename}--")
+          file = Tempfile.new("ruby-clip-#{basename}--", binmode: true)
           file.write(sqlite_content)
           file.seek(0)
           file
